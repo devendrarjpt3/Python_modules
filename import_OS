@@ -1,0 +1,12 @@
+import os
+print(os.getcwd())  # Prints the current working directory
+os.chdir("/home/admusr/Downloads/devendra/Raj/")  # Change the working directory
+print(os.getcwd())  # Prints the new directory
+#print(os.listdir("."))  # Lists all files and folders in the current directory
+os.mkdir("NewFolder")  # Creates a new directory named "NewFolder"
+print(os.listdir())
+#os.rmdir("NewFolder")  # Removes the "NewFolder" directory
+os.chdir("/home/admusr/os_module")
+info = os.stat("osModule.py")  # Get file information
+print(info.st_size)  # Prints the file size in bytes
+os.system("ls -l")  # Runs `ls -l` command in Linux/macOS
