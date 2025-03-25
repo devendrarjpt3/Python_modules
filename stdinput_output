@@ -4,4 +4,4 @@ data = sys.stdin.read()  # Reads all input until EOF (Ctrl+D on Linux/Mac)
 
 with open("output.txt", "w") as f:  # Open a file named "output.txt" in write mode
     sys.stdout = f  # Redirect sys.stdout to the file
-    print({data})  # This text goes into "output.txt" instead of the console
+    print(f"this is written : {data}")  # This text goes into "output.txt" instead of the console
